@@ -14,7 +14,7 @@
 		545F4C2D2A3207DE000A19C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 545F4C2C2A3207DE000A19C0 /* Assets.xcassets */; };
 		545F4C302A3207DE000A19C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 545F4C2E2A3207DE000A19C0 /* LaunchScreen.storyboard */; };
 		545F4C382A3207EA000A19C0 /* ApiInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545F4C372A3207EA000A19C0 /* ApiInteractor.swift */; };
-		545F4C3C2A33129A000A19C0 /* DLFLoginStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545F4C3B2A33129A000A19C0 /* DLFLoginStruct.swift */; };
+		545F4C3C2A33129A000A19C0 /* DlfApiInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545F4C3B2A33129A000A19C0 /* DlfApiInteractor.swift */; };
 		545F4C3F2A331473000A19C0 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 545F4C3E2A331473000A19C0 /* Alamofire */; };
 /* End PBXBuildFile section */
 
@@ -28,7 +28,7 @@
 		545F4C2F2A3207DE000A19C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		545F4C312A3207DE000A19C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		545F4C372A3207EA000A19C0 /* ApiInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiInteractor.swift; sourceTree = "<group>"; };
-		545F4C3B2A33129A000A19C0 /* DLFLoginStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DLFLoginStruct.swift; sourceTree = "<group>"; };
+		545F4C3B2A33129A000A19C0 /* DlfApiInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DlfApiInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +65,7 @@
 				545F4C232A3207DA000A19C0 /* AppDelegate.swift */,
 				545F4C252A3207DA000A19C0 /* SceneDelegate.swift */,
 				545F4C272A3207DA000A19C0 /* ViewController.swift */,
-				545F4C3B2A33129A000A19C0 /* DLFLoginStruct.swift */,
+				545F4C3B2A33129A000A19C0 /* DlfApiInteractor.swift */,
 				545F4C292A3207DA000A19C0 /* Main.storyboard */,
 				545F4C2C2A3207DE000A19C0 /* Assets.xcassets */,
 				545F4C2E2A3207DE000A19C0 /* LaunchScreen.storyboard */,
@@ -156,7 +156,7 @@
 				545F4C242A3207DA000A19C0 /* AppDelegate.swift in Sources */,
 				545F4C262A3207DA000A19C0 /* SceneDelegate.swift in Sources */,
 				545F4C382A3207EA000A19C0 /* ApiInteractor.swift in Sources */,
-				545F4C3C2A33129A000A19C0 /* DLFLoginStruct.swift in Sources */,
+				545F4C3C2A33129A000A19C0 /* DlfApiInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

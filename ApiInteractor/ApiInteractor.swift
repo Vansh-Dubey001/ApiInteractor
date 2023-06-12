@@ -49,7 +49,7 @@ class ApiInteractor{
         return request
     }
     
-    func fetchData(_url: URLRequest, completion: @escaping(Result<NSDictionary, ErrorHandling>) -> Void) {
+    func fetchData(_url: URLRequest, completion: @escaping(Result<DlfApiInteractor, ErrorHandling>) -> Void) {
         AF.request(_url.url!, parameters: self.params, headers: self.headers).responseData { response in
             switch response.result {
             case .success(let data):
@@ -57,9 +57,10 @@ class ApiInteractor{
                     switch statusCode {
                     case 200:
                         do{
-                            let jsonObject = try JSONSerialization.jsonObject(with: data)
-                            completion(.success(jsonObject as! NSDictionary))
-                        } catch {
+                            let jsonObject = try JSONDecoder().decode(DlfApiInteractor.self, from: data)
+                            completion(.success(jsonObject))
+                        } catch let err{
+                            print(err)
                             completion(.failure(.SerializationFailed))
                         }
                     case 401:

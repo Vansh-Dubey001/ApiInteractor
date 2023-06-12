@@ -15,13 +15,12 @@ class ViewController: UIViewController {
         let obj = ApiInteractor()
         let objrequest = obj.request(urlpath: .resendOtp, method: .post)
         obj.fetchData(_url: objrequest) { result in
-            print("Api result", result)
+            print("Api result", result, "\n")
+            
             switch result {
                 
             case .success(let str):
-                for i in str {
-                    print("m system status code: \(i.value)")
-                }
+                print(str)
             case .failure(let err):
                 print("errror",err)
             }
